@@ -23,6 +23,7 @@
 
 
 Example:
+
 `$ node app.js add --title 'Good Day!' encode --body='Today is big day. Good Luck.' --author=John sendMail`
 ````js
 console.log('process.argv=', process.argv);
@@ -39,6 +40,7 @@ process.argv= [ '/usr/local/opt/nvm/versions/node/v8.2.1/bin/node',
   '--body=Today is big day. Good Luck.',
   '--author=John',
   'sendMail' ]
+
 yargs.argv= { _: [ 'add', 'encode', 'sendMail' ],
   title: 'Good Day!',
   body: 'Today is big day. Good Luck.',
@@ -157,6 +159,7 @@ Help 會自動根據環境參數顯示對應的語系(但似乎不支援繁中)
 修改語系：
 
 `$ printenv LANG`
+
 zh_TW.UTF-8
 
 `$ export LANG="en_US.UTF-8"`
