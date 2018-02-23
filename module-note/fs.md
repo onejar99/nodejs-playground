@@ -8,12 +8,12 @@
 ## Key Points
 1. 所有 methods 都有 asynchronous 和 synchronous 的形式
 
-
 ## TOC
 * [Note: asynchronous form vs. synchronous form](#async-vs-sync-form)
 * [fs.stat()](#stat): 取得檔案資訊，如檔案大小、建立時間
 * [fs.appendFile()](#appendfile): 寫入檔案，以 append 方式
 
+---
 
 <a name="async-vs-sync-form"></a>
 

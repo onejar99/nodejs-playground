@@ -8,6 +8,7 @@
 ## TOC
 * [_.uniq()](#uniq): 過濾陣列裡的重複元素
 
+---
 
 <a name="uniq"></a>
 

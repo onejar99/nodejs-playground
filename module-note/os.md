@@ -8,6 +8,7 @@
 ## TOC
 * [os.userInfo()](#userinfo): 取得使用者名稱與 Home 路徑等資訊
 
+---
 
 <a name="userinfo"></a>
 ## os.userInfo([options])
