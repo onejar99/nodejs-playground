@@ -2,7 +2,7 @@
 
 > * Type: Built-in
 > * Document: [Node.js API Doc - OS](https://nodejs.org/dist/latest-v8.x/docs/api/os.html)
-> * requiring syntax: `const _ = require("lodash");`
+> * Requiring syntax: `const os = require("os");`
 
 ## TOC
 * [os.userInfo([options])](#userinfo)
