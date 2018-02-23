@@ -1,6 +1,6 @@
 # Node.js Practice
 
-Node.js learning note.
+The playground of Node.js practice and learning note.
 
 
 ## Basic
