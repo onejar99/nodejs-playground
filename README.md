@@ -3,9 +3,13 @@
 The playground of Node.js practice and learning note.
 
 
-## Basic
-1. [Requiring Modules](./practice/requiring-modules)
+## Practices
 1. [Todo App (CLI)](./practice/todo-app-cli)
+1. [Weather App (CLI)](./practice/)
+
+
+## Concepts
+1. [Requiring Modules](./practice/requiring-modules)
 
 
 ## Modules: Built-in
@@ -19,6 +23,7 @@ The playground of Node.js practice and learning note.
 1. [string-format](./module-note/string-format.md): 字串格式化 utility methods
 1. [sleep](./module-note/sleep.md): sleep utility methods (for debugging)
 1. [request](./module-note/request.md): Simple way to make asynchronous Http calls 
+
 
 ## Main Reference
 * [Udemy - The Complete Node.js Developer Course (2nd Edition) by Andrew Mead](https://www.udemy.com/the-complete-nodejs-developer-course-2/)
