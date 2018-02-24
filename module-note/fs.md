@@ -8,6 +8,8 @@
 ## Key Points
 1. 所有 methods 都有 asynchronous 和 synchronous 的形式
 
+<a name="toc"></a>
+
 ## TOC
 * [Note: asynchronous form vs. synchronous form](#async-vs-sync-form)
 * [fs.stat()](#stat): 取得檔案資訊，如檔案大小、建立時間
@@ -15,6 +17,7 @@
 
 ---
 
+<div style="text-align:right; font-size: smaller;"><a href="#toc">Back to TOC</a></div>
 <a name="async-vs-sync-form"></a>
 
 ## Note: asynchronous form vs. synchronous form
@@ -75,7 +78,7 @@ x= Stats {
 app.js end
 ````
 
-
+<div style="text-align:right; font-size: smaller;"><a href="#toc">Back to TOC</a></div>
 <a name="stat"></a>
 
 ## fs.stat(path, callback), fs.statSync(path)]
@@ -113,6 +116,7 @@ x= Stats {
   birthtime: 2018-02-23T14:09:55.728Z }
 ````
 
+<div style="text-align:right; font-size: smaller;"><a href="#toc">Back to TOC</a></div>
 <a name="appendfile"></a>
 
 ## fs.appendFile(file, data[, options], callback), fs.appendFileSync(file, data[, options])

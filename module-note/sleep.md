@@ -14,7 +14,7 @@ blocking 式的 sleep，和 `setTimeout()` 的 callback 式不同，主要用於
 > * **This is mainly useful for debugging.**
 > * These calls will **block execution of all JavaScript** by halting Node.js' event loop!
 
-
+<a name="toc"></a>
 
 ## TOC
 * [sleep.sleep(n)](#sleep-msleep-usleep): sleep for n seconds
@@ -24,6 +24,7 @@ blocking 式的 sleep，和 `setTimeout()` 的 callback 式不同，主要用於
 
 ---
 
+<div style="text-align:right; font-size: smaller;"><a href="#toc">Back to TOC</a></div>
 <a name="sleep-msleep-usleep"></a>
 
 ## sleep.sleep(n), sleep.msleep(n), sleep.usleep(n)
@@ -45,6 +46,7 @@ app start
 app end
 ````
 
+<div style="text-align:right; font-size: smaller;"><a href="#toc">Back to TOC</a></div>
 <a name="sleep-vs-settimeout"></a>
 
 ## sleep.sleep() vs. setTimeout()

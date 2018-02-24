@@ -11,12 +11,14 @@ ES6支援**模板字串 (Template literals or Template strings)** 功能，在�
 
 Reference：[Template literals - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
 
+<a name="toc"></a>
 
 ## TOC
 * [format()](#format): 格式化字串
 
 ---
 
+<div style="text-align:right; font-size: smaller;"><a href="#toc">Back to TOC</a></div>
 <a name="format"></a>
 
 ## format(template, $0, $1, …, $N)

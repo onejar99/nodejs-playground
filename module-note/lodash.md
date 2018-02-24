@@ -5,11 +5,14 @@
 > * Document: [npm - lodash](https://www.npmjs.com/package/lodash)
 > * Requiring syntax: `const _ = require("lodash");`
 
+<a name="toc"></a>
+
 ## TOC
 * [_.uniq()](#uniq): 過濾陣列裡的重複元素
 
 ---
 
+<div style="text-align:right; font-size: smaller;"><a href="#toc">Back to TOC</a></div>
 <a name="uniq"></a>
 
 ## _.uniq(arrayObj)

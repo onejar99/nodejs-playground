@@ -5,11 +5,14 @@
 > * Document: [npm - request](https://www.npmjs.com/package/request)
 > * Requiring syntax: `const request = require('request');`
 
+<a name="toc"></a>
+
 ## TOC
 * [Basic example](#basic-example)
 
 ---
 
+<div style="text-align:right; font-size: smaller;"><a href="#toc">Back to TOC</a></div>
 <a name="basic-example"></a>
 
 ## Basic example

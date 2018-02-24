@@ -5,12 +5,16 @@
 > * Document: [Node.js API Doc - OS](https://nodejs.org/dist/latest-v8.x/docs/api/os.html)
 > * Requiring syntax: `const os = require("os");`
 
+<a name="toc"></a>
+
 ## TOC
 * [os.userInfo()](#userinfo): 取得使用者名稱與 Home 路徑等資訊
 
 ---
 
+<div style="text-align:right; font-size: smaller;"><a href="#toc">Back to TOC</a></div>
 <a name="userinfo"></a>
+
 ## os.userInfo([options])
 
 取得**使用者名稱**與 **Home 路徑**等資訊。

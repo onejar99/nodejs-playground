@@ -5,7 +5,6 @@
 > * Document: [npm - yargs](https://www.npmjs.com/package/yargs)
 > * Requiring syntax: `const yargs = require('yargs');`
 
-
 <a name="toc"></a>
 
 ## TOC
