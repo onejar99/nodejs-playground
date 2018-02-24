@@ -18,7 +18,7 @@ The playground of Node.js practice and learning note.
 1. [yargs](./module-note/yargs.md): 支援 command line 解析的工具函數，適合用於撰寫 CLI Apps
 1. [string-format](./module-note/string-format.md): 字串格式化 utility methods
 1. [sleep](./module-note/sleep.md): sleep utility methods (for debugging)
-
+1. [request](./module-note/request.md): Simple way to make asynchronous Http calls 
 
 ## Main Reference
 * [Udemy - The Complete Node.js Developer Course (2nd Edition) by Andrew Mead](https://www.udemy.com/the-complete-nodejs-developer-course-2/)
