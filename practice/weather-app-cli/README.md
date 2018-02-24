@@ -27,13 +27,13 @@ module.exports = {
 ````
 Queried address: Taipei 101
 Querying...
-Complete Address: Taipei 101, No. 7信義路五段 Xinyi District, Taipei City, Taiwan 110
+Complete Address: Taipei 101, No. 7, Section 5, Xinyi Road, Xinyi District, Taipei City, Taiwan 110
 Latitude: 25.0339639
 Longitude: 121.5644722
 Timezone: Asia/Taipei
 Weather Summary: Partly Cloudy
-Temperature: 16.25
-Apparent Temperature: 16.333333333333332
+Temperature: 16.47 °C
+Apparent Temperature: 16.56 °C
 ````
 
 `$ node app.js --addr 'Marina bay sands'`
@@ -44,9 +44,9 @@ Complete Address: 10 Bayfront Avenue, Singapore 018956
 Latitude: 1.2833754
 Longitude: 103.8607264
 Timezone: Asia/Singapore
-Weather Summary: Humid
-Temperature: 25.4
-Apparent Temperature: 26.33888888888889
+Weather Summary: Humid and Partly Cloudy
+Temperature: 26.05 °C
+Apparent Temperature: 27.99 °C
 ````
 
 `$ node app.js -a ooooooo`
@@ -59,6 +59,6 @@ Error! Msg=[Unable to find that address.]
 ## Other Reference
 * Google Geo API
     * E.g. https://maps.googleapis.com/maps/api/geocode/json?address=Taipe101
-*  Weather API: forecast.io
-    * Dark Sky API - Developer
+* [Weather API: Dark Sky(forecast.io)](https://darksky.net/)
+    * [Dark Sky API - Developer](https://darksky.net/dev)
     * E.g. https://api.darksky.net/forecast/{your-forecast-api-access-code}/37.8267,-122.4233

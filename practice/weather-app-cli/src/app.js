@@ -32,7 +32,11 @@ geoUtil.requestGeoApi(address, (errMsg, geoResultObj) => {
         console.log(`Longitude: ${geoResultObj.longitude}`);
         console.log(`Timezone: ${weaResultObj.timezone}`);
         console.log(`Weather Summary: ${weaResultObj.summary}`);
-        console.log(`Temperature: ${weaResultObj.temperature}`);
-        console.log(`Apparent Temperature: ${weaResultObj.apparentTemperature}`);
+        console.log(`Temperature: ${formatTemperature(weaResultObj.temperature)}`);
+        console.log(`Apparent Temperature: ${formatTemperature(weaResultObj.apparentTemperature)}`);
     });
 });
+
+var formatTemperature = (n)=>{
+    return `${Math.round(n * 100) / 100} °C`;
+};
