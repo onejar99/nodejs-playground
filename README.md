@@ -15,6 +15,7 @@ The playground of Node.js practice and learning note.
 ## Modules: 3rd-Party
 1. [lodash](./module-note/lodash.md): 各種泛用的API工具，如型態判斷、過濾陣列重複元素
 1. [yargs](./module-note/yargs.md): 支援 command line 解析的工具函數，適合用於撰寫 CLI Apps
+1. [string-format](./module-note/string-format.md): 字串格式化 utility methods
 
 
 ## Main Reference
