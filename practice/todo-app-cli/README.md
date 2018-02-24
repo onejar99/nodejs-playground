@@ -1,4 +1,4 @@
-# CLI Tool: Todo App
+# Todo App (CLI)
 
 A Todo App with Command Line Interface.
 
