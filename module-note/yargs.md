@@ -7,7 +7,8 @@
 
 ## TOC
 * [Note: yargs.argv vs. process.argv](#yargs-vs-process-argv)
-* [Example: Simple example for command() & help()](#simeple-example-command-help)
+* [Example: Basic usage with command() & help()](#basic-usage-command-help)
+* [Example: Basic usage with options() & alias()](#basic-usage-options-alias)
 * [Note: Locale of Help](#locale-of-help)
 
 ---
@@ -48,9 +49,9 @@ yargs.argv= { _: [ 'add', 'encode', 'sendMail' ],
   '$0': 'app.js' }
 ````
 
-<a name="simeple-example-command-help"></a>
+<a name="basic-usage-command-help"></a>
 
-## Example: Simple example for command() & help()
+## Example: Basic usage with command() & help()
 
 用 `command()` & `help()` 建立基本的 Command 檢核和 Help 支援
 
@@ -149,6 +150,61 @@ Missing required argument: target
 ````
 [INF] Command= attack
 ````
+
+
+<a name="basic-usage-options-alias"></a>
+
+## Example: Basic usage with options() & alias()
+
+### Example: 
+`test-yargs.js`:
+````js
+const yargs = require('yargs');
+
+const argv = yargs
+    .options({
+        address: {
+            describe: 'Address',
+            alias: ['a', 'addr'],
+            demand: true,
+            string: true,
+        }
+    })
+    .help()
+    .alias('help', ['h', 's', 'sos'])
+    .alias('address', 'ad')
+    .argv;
+
+console.log('argv=', argv);
+````
+
+### Result:
+
+`$ node test-yargs.js`
+````
+Options:
+  --version                    Show version number                     [boolean]
+  --address, -a, --addr, --ad  Address                       [string] [required]
+  --help, -h, -s, --sos        Show help                               [boolean]
+
+Missing required argument: address
+````
+
+`$ node test-yargs.js -a=taiwan`
+````
+argv= { _: [],
+  version: false,
+  help: false,
+  h: false,
+  s: false,
+  sos: false,
+  a: 'taiwan',
+  address: 'taiwan',
+  addr: 'taiwan',
+  ad: 'taiwan',
+  '$0': 'test-yargs.js' }
+````
+
 
 <a name="locale-of-help"></a>
 
