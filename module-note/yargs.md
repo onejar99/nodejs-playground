@@ -5,6 +5,9 @@
 > * Document: [npm - yargs](https://www.npmjs.com/package/yargs)
 > * Requiring syntax: `const yargs = require('yargs');`
 
+
+<a name="toc"></a>
+
 ## TOC
 * [Note: yargs.argv vs. process.argv](#yargs-vs-process-argv)
 * [Example: Basic usage with command() & help()](#basic-usage-command-help)
@@ -13,6 +16,7 @@
 
 ---
 
+<div style="text-align:right; font-size: smaller;"><a href="#toc">Back to TOC</a></div>
 <a name="yargs-vs-process-argv"></a>
 
 ## Note: yargs.argv vs. process.argv
@@ -49,6 +53,7 @@ yargs.argv= { _: [ 'add', 'encode', 'sendMail' ],
   '$0': 'app.js' }
 ````
 
+<div style="text-align:right; font-size: smaller;"><a href="#toc">Back to TOC</a></div>
 <a name="basic-usage-command-help"></a>
 
 ## Example: Basic usage with command() & help()
@@ -151,7 +156,7 @@ Missing required argument: target
 [INF] Command= attack
 ````
 
-
+<div style="text-align:right; font-size: smaller;"><a href="#toc">Back to TOC</a></div>
 <a name="basic-usage-options-alias"></a>
 
 ## Example: Basic usage with options() & alias()
@@ -206,7 +211,8 @@ argv= { _: [],
 ````
 
 
-<a name="locale-of-help"></a>
+<div style="text-align:right; font-size: smaller;"><a href="#toc">Back to TOC</a></div>
+<a name="locale-of-help"></a> 
 
 ## Note: Locale of Help
 
