@@ -5,6 +5,7 @@ The playground of Node.js practice and learning note.
 
 ## Basic
 1. [Requiring Modules](./practice/requiring-modules)
+1. [CLI Tool - Todo App](./practice/todo-app-cli)
 
 
 ## Modules: Built-in
