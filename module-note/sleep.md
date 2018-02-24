@@ -5,7 +5,7 @@
 > * Document: [Node.js API Docs - sleep](https://www.npmjs.com/package/sleep)
 > * Requiring syntax: `const sleep = require('sleep');`
 
-# Notes
+## Notes
 
 blocking 式的 sleep，和 `setTimeout()` 的 callback 式不同，主要用於 debugging
 
