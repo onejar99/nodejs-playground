@@ -10,6 +10,7 @@ The playground of Node.js practice and learning note.
 
 ## Concepts
 1. [Requiring Modules](./practice/requiring-modules)
+1. [Promises](./practice/promises)
 
 
 ## Modules: Built-in
