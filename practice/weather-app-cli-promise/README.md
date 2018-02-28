@@ -10,8 +10,11 @@ Revised as Promise statements.
 
 ## Run
 `$ cd src`
+
 `$ node app.js --addr 'Taipei 101'`
+
 `$ node app.js --addr 'Marina bay sands'`
+
 `$ node app.js -a ooooooo`
 
 
