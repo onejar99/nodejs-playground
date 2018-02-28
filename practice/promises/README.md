@@ -73,12 +73,13 @@ Promise {<resolved>: "Hey, it worked!"}
 
 純 Promise 基本規則範例，未使用 async, 傳遞參數等情境。
 
-1. Promise executor 會立刻執行
-    * 所以用 Promise 時通常會包在一個函數中，需要時才呼叫此封裝函數 (參考Example 3)
-2. Promise 的狀態一旦變成 settle 類型（`fulfilled` 或 `rejected`)，就不能再變動
+1. Promise Executor 會立刻執行
+    * 所以用 Promise 時通常會包在一個函數中，需要時才呼叫此封裝函數 (參考 [Example 3](#run-ex3))
+2. Promise 的狀態一旦變成 settled 類型（`fulfilled` 或 `rejected`)，就不能再變動
     * 因此只有第一個 `resolve()` or `reject()` 有效
     * 不能 switch a rejected promise to a fulfilled one
 3. `resolve()` or `reject()` only accept zero or one argument (but accept object)
+    * 只有一個 `PromiseValue`
     * 多塞兩個以上的參數不會拋錯，但沒作用
 
 `$ node src/ex1-promise-basic.js`
@@ -110,7 +111,7 @@ asynchronous 情境簡易用法，無參數傳遞。
 
 ### Example 4: then() Trigger
 
-1. 無論是 `resolve` 或 `reject`，同一個 Promise 再呼叫一次 `then()` 也會再次觸發對應的 callback function
+1. 無論是 `resolved` 或 `rejectd`，同一個 Promise 再呼叫一次 `then()` 也會再次觸發對應的 callback function
 2. `then()` 會回傳一個 Promise 物件
     * 可以由 `resolve` 或 `reject` callback function 回傳指定的 Promise
     * 如果沒有自訂回傳，就會回傳一個狀態等於 pending 的 Promise
@@ -157,7 +158,8 @@ Error 4: Arguments must be numbers.
     2. 充當 try/catch 功能 (Case 3)
 * 補充：
     1. 如果同時有自定義的 reject callback 和 catch callback，會以自定義 reject callback 為準 (Case 2)
-    2. 在 resolve 或 reject callback 內出現錯誤，其實會被包裝成一個 rejected promise 拋出來，被下一層的 reject callback處理 (Case 4)， 或 catch 處理(Case 5)，但同一層的 reject callback 沒用(Case 5)。如果都沒有人處理，會真的拋錯`UnhandledPromiseRejectionWarning` (Case 6)
+    2. 在 resolve 或 reject callback 內出現錯誤，其實會被包裝成一個 rejected promise 拋出來，被下一層的 reject callback 處理 (Case 4)， 或 catch 處理(Case 5)，但不會被同一層的 reject callback 處理(Case 5)
+    3. 如果都沒有人處理 rejected Promise，會拋錯 `UnhandledPromiseRejectionWarning` (Case 6)
     
 `$ node src/ex7-promise-catch.js`
 ````
