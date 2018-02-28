@@ -1,15 +1,39 @@
 # Promises
 
-[TOC]
+<a name="toc"></a>
+
+## TOC
+* Notes
+    * [Promise Advantages](#promise-advantages)
+    * [Promise Object](#promise-objects)
+    * [Promise Status Types](#promise-objects)
+* Run
+    * [Example 1: Basic](#run-ex1)
+    * [Example 2: Asynchronous](#run-ex2)
+    * [Example 3: Encapsulating Promise & Passing Parameters](#run-ex3)
+    * [Example 4: then() Trigger](#run-ex4)
+    * [Example 5: Callback vs. Promise](#run-ex5)
+    * [Example 6: Chaining Promises](#run-ex6)
+    * [Example 7: catch()](#run-ex7)
+* [Other References](#other-references)
+
+---
 
 ## Notes
+
+<div style="text-align:right; font-size: smaller;"><a href="#toc">Back to TOC</a></div>
+<a name="promise-advantages"></a>
 
 ### Promise Advantages
 1. 利用鏈式呼叫的寫法，簡化層層 callback 的寫法，避免巢狀 *Callback Hell*
 2. `成功callback` 和 `失敗callback` 可以被分別定義，增加維護性
 3. 利用維護狀態的方式，控制 callback 的呼叫，只會執行一次 `resolve` 或 `reject` callback，降低因撰寫失誤而重複呼叫 callback 的機率
 
-### Promise Object
+
+<div style="text-align:right; font-size: smaller;"><a href="#toc">Back to TOC</a></div>
+<a name="promise-objects"></a>
+
+### Promise Objects
 ````
 Promise {<pending>}
     - __proto__: Promise
@@ -22,6 +46,9 @@ Promise {<resolved>: "Hey, it worked!"}
     - [[PromiseStatus]]:"resolved"
     - [[PromiseValue]]:"Hey, it worked!"
 ````
+
+<div style="text-align:right; font-size: smaller;"><a href="#toc">Back to TOC</a></div>
+<a name="promise-status-types"></a>
 
 ### Promise Status Types
 
@@ -39,6 +66,9 @@ Promise {<resolved>: "Hey, it worked!"}
 
 ## Run
 
+<div style="text-align:right; font-size: smaller;"><a href="#toc">Back to TOC</a></div>
+<a name="run-ex1"></a>
+
 ### Example 1: Basic
 
 純 Promise 基本規則範例，未使用 async, 傳遞參數等情境。
@@ -54,12 +84,18 @@ Promise {<resolved>: "Hey, it worked!"}
 `$ node src/ex1-promise-basic.js`
 
 
+<div style="text-align:right; font-size: smaller;"><a href="#toc">Back to TOC</a></div>
+<a name="run-ex2"></a>
+
 ### Example 2: Asynchronous
 
 asynchronous 情境簡易用法，無參數傳遞。
 
 `$ node src/ex2-promise-async.js`
 
+
+<div style="text-align:right; font-size: smaller;"><a href="#toc">Back to TOC</a></div>
+<a name="run-ex3"></a>
 
 ### Example 3: Encapsulating Promise & Passing Parameters
 
@@ -68,6 +104,9 @@ asynchronous 情境簡易用法，無參數傳遞。
 
 `$ node src/ex3-promise-encap-n-param.js`
 
+
+<div style="text-align:right; font-size: smaller;"><a href="#toc">Back to TOC</a></div>
+<a name="run-ex4"></a>
 
 ### Example 4: then() Trigger
 
@@ -84,6 +123,10 @@ Ans 3: undefined
 Error 4: Arguments must be numbers.
 ````
 
+
+<div style="text-align:right; font-size: smaller;"><a href="#toc">Back to TOC</a></div>
+<a name="run-ex5"></a>
+
 ### Example 5: Callback vs. Promise
 
 同一個 asynchronous 範例的 callback 版和 Promise 版寫法比較
@@ -92,11 +135,19 @@ Error 4: Arguments must be numbers.
 `$ node src/ex5-ver-callback.js`
 `$ node src/ex5-ver-promise.js`
 
+
+<div style="text-align:right; font-size: smaller;"><a href="#toc">Back to TOC</a></div>
+<a name="run-ex6"></a>
+
 ### Example 6: Chaining Promises
 
 鏈式呼叫的寫法
 
 `$ node src/ex6-promise-chaining.js`
+
+
+<div style="text-align:right; font-size: smaller;"><a href="#toc">Back to TOC</a></div>
+<a name="run-ex7"></a>
 
 ### Example 7: catch()
 
@@ -126,5 +177,8 @@ Error 4: Arguments must be numbers.
 (node:28285) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
 ````
 
-## Other Reference
+<div style="text-align:right; font-size: smaller;"><a href="#toc">Back to TOC</a></div>
+<a name="other-references"></a>
+
+## Other References
 * [大白话讲解Promise（一） - 吕大豹- 博客园](https://www.cnblogs.com/lvdabao/p/es6-promise-1.html)
