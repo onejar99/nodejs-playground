@@ -5,7 +5,8 @@ The playground of Node.js practice and learning note.
 
 ## Practices
 1. [Todo App (CLI)](./practice/todo-app-cli)
-1. [Weather App (CLI)](./practice/weather-app-cli)
+1. [Weather App (CLI) (Callback)](./practice/weather-app-cli)
+1. [Weather App (CLI) (Promise)](./practice/weather-app-cli-promise)
 
 
 ## Concepts

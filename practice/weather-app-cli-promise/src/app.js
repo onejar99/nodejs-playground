@@ -17,19 +17,19 @@ var address = argv.address;
 console.log(`Queried address: ${address}`);
 console.log(`Querying...`);
 
-geoUtil.requestGeoApi(address, (errMsg, geoResultObj) => {
-    if(errMsg){
-        console.log(`Error! Msg=[${errMsg}]`);
-        return;
-    }
-    weatherUtil.requestWeatherApi(geoResultObj.latitude, geoResultObj.longitude, (errMsg, weaResultObj) => {
-        if(errMsg){
-            console.log(`Error! Msg=[${errMsg}]`);
-            return;
-        }
+var geoResultObj;
+
+geoUtil.requestGeoApiPms(address)
+    .then((retObj)=>{
+        geoResultObj = retObj;
+        return weatherUtil.requestWeatherApiPms(geoResultObj.latitude, geoResultObj.longitude);
+    })
+    .then((weaResultObj)=>{
         printResult(geoResultObj, weaResultObj);
+    })
+    .catch((errMsg)=>{
+        console.log(`Error! Msg=[${errMsg}]`);
     });
-});
 
 var formatTemperature = (n)=>{
     return `${Math.round(n * 100) / 100} °C`;
@@ -44,4 +44,3 @@ var printResult = (geoResultObj, weaResultObj) => {
     console.log(`Temperature: ${formatTemperature(weaResultObj.temperature)}`);
     console.log(`Apparent Temperature: ${formatTemperature(weaResultObj.apparentTemperature)}`);
 }
-

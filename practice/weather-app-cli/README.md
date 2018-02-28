@@ -1,6 +1,6 @@
 # Weather App (CLI)
 
-A weather querying App with Command Line Interface.
+A weather querying App with Command Line Interface. (Using tranditional callback)
 
 ## Key Points
 
