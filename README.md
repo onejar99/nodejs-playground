@@ -4,14 +4,14 @@ The playground of Node.js practice and learning note.
 
 
 ## Practices
-1. [Todo App (CLI)](./practice/todo-app-cli)
-1. [Weather App (CLI) (Callback)](./practice/weather-app-cli)
-1. [Weather App (CLI) (Promise)](./practice/weather-app-cli-promise)
+1. [Todo App (CLI)](./practice/todo-app-cli): 待辦事項管理 CLI App
+1. [Weather App (CLI) (Callback)](./practice/weather-app-cli): 景點天氣查詢 CLI App
+1. [Weather App (CLI) (Promise)](./practice/weather-app-cli-promise): 景點天氣查詢 CLI App
 
 
 ## Concepts
 1. [Requiring Modules](./practice/requiring-modules)
-1. [Promises](./practice/promises)
+1. [Promises](./practice/promises) (ES6)
 
 
 ## Modules: Built-in
