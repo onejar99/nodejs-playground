@@ -12,6 +12,7 @@ The playground of Node.js practice and learning note.
 ## Concepts
 1. [Requiring Modules](./practice/requiring-modules)
 1. [Promises](./practice/promises) (ES6)
+1. [Async/Await](./practice/async-await) (ES7)
 
 
 ## Modules: Built-in
