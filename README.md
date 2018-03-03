@@ -5,8 +5,9 @@ The playground of Node.js practice and learning note.
 
 ## Practices
 1. [Todo App (CLI)](./practice/todo-app-cli): 待辦事項管理 CLI App
-1. [Weather App (CLI) (Callback)](./practice/weather-app-cli): 景點天氣查詢 CLI App
-1. [Weather App (CLI) (Promise)](./practice/weather-app-cli-promise): 景點天氣查詢 CLI App
+1. [Weather App (CLI) w/ Callback](./practice/weather-app-cli): 景點天氣查詢 CLI App (Callback寫法)
+1. [Weather App (CLI) w/ Promise](./practice/weather-app-cli-promise): 景點天氣查詢 CLI App (Promise寫法)
+1. [Weather App (CLI) w/ axios](./practice/weather-app-cli-axios): 景點天氣查詢 CLI App (axios寫法)
 
 
 ## Concepts
