@@ -26,6 +26,7 @@ The playground of Node.js practice and learning note.
 1. [string-format](./module-note/string-format.md): 字串格式化 utility methods
 1. [sleep](./module-note/sleep.md): sleep utility methods (for debugging)
 1. [request](./module-note/request.md): Simple way to make asynchronous Http calls 
+1. [axios](./module-note/axios.md): 基於 Promise 設計的 Http Request tools
 
 
 ## Main Reference
