@@ -116,18 +116,15 @@ asynchronous 情境簡易用法，無參數傳遞。
 
 ### Example 4: then() Trigger
 
-1. 無論是 `resolved` 或 `rejectd`，同一個 Promise 再呼叫一次 `then()` 也會再次觸發對應的 callback function
-2. `then()` 會回傳一個 Promise 物件
-    * 可以由 `resolve` 或 `reject` callback function 回傳指定的 Promise
-    * 如果沒有自訂回傳，就會回傳一個狀態等於 pending 的 Promise
+1. 無論是 `resolved` 或 `rejectd`，同一個 Promise 再呼叫一次 `then()` 也會再次觸發對應的 callback function (e.g. `pms1`)
+2. `then()` 會回傳一個**新的** pending Promise 物件
+    * 該 Promise 的狀態控制由 `then()` 的 resolved/rejectd callback 的**內容**控制 (而不是看是執行的是 resolve 或 reject callbacl)
+    * callback 如果 `throw`，就算 `reject()` (e.g. `pms4`)
+    * callback 如果 `return` 另一個 Promise 物件，則以該 Promise 的狀態為準 (e.g. `pms6`)
+    * callback 如果沒有 `return` (e.g. `pms2`, `pms3`)或 `return` 一般值(e.g. `pms5`)，就算 `resolve()`
 
 `$ node src/ex4-promise-then.js`
-````
-Error 1: Arguments must be numbers.
-Error 2: Arguments must be numbers.
-Ans 3: undefined
-Error 4: Arguments must be numbers.
-````
+
 
 
 <div style="text-align:right; font-size: smaller;"><a href="#toc">Back to TOC</a></div>
@@ -139,6 +136,7 @@ Error 4: Arguments must be numbers.
 (極簡範例，只有一層 asynchronous，Promise 優勢不明顯)
 
 `$ node src/ex5-ver-callback.js`
+
 `$ node src/ex5-ver-promise.js`
 
 
