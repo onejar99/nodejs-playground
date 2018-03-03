@@ -25,7 +25,7 @@
 <a name="promise-advantages"></a>
 
 ### Promise Advantages
-1. 利用鏈式呼叫的寫法，簡化層層 callback 的寫法，避免巢狀 *Callback Hell*
+1. 利用鏈式呼叫的寫法，簡化層層 callback 的寫法，避免巢狀 **Callback Hell**
 2. `成功callback` 和 `失敗callback` 可以被分別定義，增加維護性
 3. 利用維護狀態的方式，控制 callback 的呼叫，只會執行一次 `resolve` 或 `reject` callback，降低因撰寫失誤而重複呼叫 callback 的機率
 
@@ -63,7 +63,6 @@ Promise {<resolved>: "Hey, it worked!"}
 > `fulfilled` 和 `rejected` 又稱 `settled` 類型的狀態
 > (the promise has been fulfilled or reject)
 
-
 ## Run
 
 <div style="text-align:right; font-size: smaller;"><a href="#toc">Back to TOC</a></div>
@@ -80,7 +79,13 @@ Promise {<resolved>: "Hey, it worked!"}
     * 不能 switch a rejected promise to a fulfilled one
 3. `resolve()` or `reject()` only accept zero or one argument (but accept object)
     * 只有一個 `PromiseValue`
-    * 多塞兩個以上的參數不會拋錯，但沒作用
+    * 多塞兩個以上的參數不會發生錯誤，但沒有作用
+4. `rejected` 被視為**發生例外**，必須有人處理，否則會發生 `UnhandledPromiseRejectionWarning`
+    * 定義 reject callback 或 catch()
+````
+(node:31062) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 2): Oh no~ not work!
+(node:31062) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+````
 
 `$ node src/ex1-promise-basic.js`
 

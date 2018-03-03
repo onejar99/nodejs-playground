@@ -5,7 +5,7 @@ var somePromise = new Promise((resolveCbk, rejectCbk)=>{
 
     resolveCbk('Hey, it worked!', 'OK001'); // only the first one of resolve or reject works
     resolveCbk('Hey, it worked! 2'); // not work
-    rejectCbk('Unable to fulfill promise.'); // not work
+    rejectCbk('Oh no~ not work!'); // not work
 
     console.log('Promise code ending');
 });
