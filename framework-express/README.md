@@ -114,10 +114,12 @@ View Rendering package.
 #### Key Points
 
 1. "views" is the default folder name of .hbs files (**based on executing path**)
-e.g., `$ node src/server.js` -> try to find `...../express-hbs-basic/views"`
+
+e.g., `$ node src/server.js` -> try to find `...../express-hbs-basic/views"`  
 e.g., `$ node server.js` -> try to find `...../express-hbs-basic/src/views"`
 
 2. 渲染基本語法：
+
 In .js: `rsp.render(hbsFileName[, renderData])`
 ````js
 app.get('/welcome', (req, rsp) => {
@@ -133,6 +135,7 @@ In .hbs:
 ````
 
 3. 如果沒用到 hbs 去做 helper 之類的設定 可以不需要 require hbs，但 hbs module 仍必須要裝，`rsp.render()` 會自己根據副檔名去找對應的 module
+
 `const hbs = require('hbs');`
 
 #### To Be Clarified
@@ -150,7 +153,7 @@ $ node server.js
 
 Visit: 
 * http://localhost:3000/welcome: 基本渲染範例
-* http://localhost:3000/hello: view有設定渲染欄位，但沒有給予實際資料，不會出錯
+* http://localhost:3000/hello: view有設定渲染欄位，但沒有給予實際資料，不會報錯
 * http://localhost:3000/welcome2: (failed case with *.txt view file) Error: Cannot find module 'txt'
 * http://localhost:3000/welcome3: (failed case with *.html view file) Error: Cannot find module 'html'
 
@@ -171,7 +174,7 @@ hbs.registerHelper('copyrightName', ()=>{
 });
 ````
 
-2. 如果 response 自己有回傳，同時 helper 也有設，**hbs helper comes first**
+2. 如果 response 自己有回傳，同時 helper 也有設，**hbs helper comes first**. 
 e.g. `copyrightYear`
 
 3. 可以當類似函數的用法使用
