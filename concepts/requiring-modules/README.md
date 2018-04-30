@@ -14,5 +14,7 @@
 
 
 ## Other Reference
+* [require() 源码解读- 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2015/05/require.html)
 * [Node.js API Docs - OS](https://nodejs.org/dist/latest-v8.x/docs/api/os.html)
 * [Node.js API Docs - File System](https://nodejs.org/dist/latest-v8.x/docs/api/fs.html)
+
