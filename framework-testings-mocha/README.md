@@ -2,6 +2,7 @@
 
 * Mocha: Testing Framework
 * Expect: Assertion Package
+* Supertest: Express Testing Package
 
 > **Except Version Issue**
 > 
@@ -23,6 +24,7 @@
     * [Notice for testing async with mocha](#testing-async-with-mocha)
 * Usage Examples
     * [Unit Test with Mocha and Except](#unit-test-mocha-expect)
+    * [Express Test with Supertest](#express-test-supertest)
 
 ## Notes
 
@@ -152,3 +154,25 @@ Source: [mocha-n-except](./mocha-n-except)
 <div style="text-align:right; font-size: smaller;"><a href="#toc">Back to TOC</a></div>
 
 ----
+
+<a name="express-test-supertest"></a>
+
+### Express Test with Supertest
+
+#### Key Points
+
+1. Export the express object `app` for used in test files.
+
+2. supertest usage examples: [server.test.js](./supertest-express-testing/src/server.test.js)
+
+#### Run
+
+Source: [supertest-express-testing](./supertest-express-testing)
+
+`$ npm test`  
+`$ npm test-watch`
+
+<div style="text-align:right; font-size: smaller;"><a href="#toc">Back to TOC</a></div>
+
+----
+
