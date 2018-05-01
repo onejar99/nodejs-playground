@@ -42,12 +42,12 @@ package.json:
   * modifying: `"mocha **/*.test.js"`: `**` -> any folder
   * running: `npm test`
 
-#### 2. Self-defined npm command name
+#### 2. Self-defined npm command
   * adding: `"test-watch": "...."`
   * running: `npm run test-watch`
 
-#### 3. Cross OS Issue
-  * for both on Windows and Unix-like
+#### 3. Cross OS issue
+  * for workable both on Windows and Unix-like
   * e.g., `"test-watch": "nodemon --exec 'npm test'"` -> `"nodemon --exec \"npm test\""`
 
 <div style="text-align:right; font-size: smaller;"><a href="#toc">Back to TOC</a></div>
