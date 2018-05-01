@@ -18,12 +18,23 @@
 
 ## TOC
 * Notes
+    * [npm install for only development](#npm-install-dev)
     * [Config for package.json](#config-for-package-json)
     * [Notice for testing async with mocha](#testing-async-with-mocha)
 * Usage Examples
     * [Unit Test with Mocha and Except](#unit-test-mocha-expect)
 
 ## Notes
+
+<a name="npm-install-dev"></a>
+
+### npm install for only development
+
+`$ npm i mocha expect@1.20.2 --save-dev`
+
+<div style="text-align:right; font-size: smaller;"><a href="#toc">Back to TOC</a></div>
+
+----
 
 <a name="config-for-package-json"></a>
 
