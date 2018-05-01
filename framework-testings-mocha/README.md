@@ -95,7 +95,7 @@ it('should add two numbers', () => {
 3. Assert by **expect** package
 
 ````js
-it('should square a number', () => {
+it('should add two numbers', () => {
     var rlt = utils.add(11, 22);
     expect(rlt).toBe(33).toBeA('number');
 });
