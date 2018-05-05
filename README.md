@@ -36,6 +36,10 @@ The playground of Node.js practice and learning note.
 1. [axios](./module-notes/axios.md): 基於 Promise 設計的 Http Request tools
 
 
+## Tools
+1.[ESLint](./tools/eslint): Linter (Code Quality Tool)
+
+
 ## Main Reference
 * [Udemy - The Complete Node.js Developer Course (2nd Edition) by Andrew Mead](https://www.udemy.com/the-complete-nodejs-developer-course-2/)
 * [Node.js API Docs](https://nodejs.org/dist/latest-v8.x/docs/api/)
