@@ -1,8 +1,8 @@
-var fruit = "apple";
+// var fruit = "apple";
 
-const obj = {
-    name: 'John',
-    age: 18,
-};
+// const obj = {
+//     name: 'John',
+//     age: 18,
+// };
 
-document.write(fruit);
+// document.write(fruit);
